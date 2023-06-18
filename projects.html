@@ -1,0 +1,54 @@
+<HTML>
+	<HEAD>
+	<TITLE>
+		Danial Ahari's Personal Website - Curriculum Vitæ
+	</TITLE>
+	<LINK rel="stylesheet" href="common.css">
+	</HEAD>
+	<BODY>
+		<SCRIPT>
+			window.onscroll = function() {
+				shrinkHeader()
+			};
+
+			function shrinkHeader() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("smallHeader").style.fontSize = "0em";
+					document.getElementById("largeHeader").style.fontSize = "1.5em";
+				} else {
+					document.getElementById("smallHeader").style.fontSize = "1.25em";
+					document.getElementById("largeHeader").style.fontSize = "1.75em";
+				}
+			}
+		</SCRIPT> 
+		<SECTION id="top">
+			<HEADER>
+			<span id="largeHeader">Danial Ahari</span><BR>
+			<span id="smallHeader">Professional, Personal, Programming, and Research Homepage</span>
+			</HEADER>
+			<NAV>
+				<span id="break"></span>
+				<A class="navlink" href="index.html">Home</A>
+				<A class="navlink" href="cv.html">Virtual CV</A>
+				<A class="navlink" href="projects.html">Current and Past Projects</A>
+				<A class="navlink" href="research.html">Research Interests</A>
+			</NAV>
+		</SECTION>
+		<SECTION id="body">
+			<SECTION id="blogPane">
+				<span id="largeSubheader">Projects</span><BR><BR>
+				<ul>
+					<li>"Host-Based CD-ROM Data Recovery" (Current)<ul>
+						<li>Working on new ways to effectively recover data from CD-ROM, an aging format.</li>
+					</ul></li>
+					<li>Campus History WebApp - Timeline<ul>
+						<li>Produced a webapp to show the University of Alabama in Huntsville campus history in a vertical timeline format.</li>
+					</ul></li>
+				</ul>
+			</SECTION>
+			<FOOTER>
+				© 2023 Danial Ahari
+			</FOOTER>
+		</SECTION>
+	</BODY>
+</HTML>

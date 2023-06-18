@@ -1,13 +1,54 @@
 <HTML>
 	<HEAD>
 	<TITLE>
-		Danial Ahari's Personal Website
+		Danial Ahari's Personal Website - Home
 	</TITLE>
 	<LINK rel="stylesheet" href="common.css">
 	</HEAD>
 	<BODY>
-		<HEADER>
-		<H1>Danial Ahari</H1>
-		</HEADER>
+		<SCRIPT>
+			window.onscroll = function() {
+				shrinkHeader()
+			};
+
+			function shrinkHeader() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("smallHeader").style.fontSize = "0em";
+					document.getElementById("largeHeader").style.fontSize = "1.5em";
+				} else {
+					document.getElementById("smallHeader").style.fontSize = "1.25em";
+					document.getElementById("largeHeader").style.fontSize = "1.75em";
+				}
+			}
+		</SCRIPT> 
+		<SECTION id="top">
+			<HEADER>
+			<span id="largeHeader">Danial Ahari</span><BR>
+			<span id="smallHeader">Professional, Personal, Programming, and Research Homepage</span>
+			</HEADER>
+			<NAV>
+				<span id="break"></span>
+				<A class="navlink" href="index.html">Home</A>
+				<A class="navlink" href="cv.html">Virtual CV</A>
+				<A class="navlink" href="projects.html">Current and Past Projects</A>
+				<A class="navlink" href="research.html">Research Interests</A>
+			</NAV>
+		</SECTION>
+		<SECTION id="body">
+			<SECTION id="blogPane">
+				<span id="largeSubheader">Who Am I?</span><BR><BR>
+				<p>My name is Danial Ahari. I am a student at the University of Alabama in Huntsville, studying Computer Science with minors in Mathematics and Foreign Language - German. I intend to graduate in May 2025 and intend to continue into a master's program and eventually a doctorate program. My goal in life is to contribute research to the body of knowledge and be able to share that knowledge in the form of education. Since highschool, I have had an interest in education, assisting teachers and eventually professors in their journey to share knowledge.</p>
+				<BR>
+				<span id="largeSubheader">German and Other Languages</span><BR><BR>
+				<p>Being from the United States, my native language is English, but as a side interest to computers, an interest I've had for years is foreign languages. I studied German and French in highschool and am pursuing German as a minor in college. Although I know some words in many languages, I'm mostly fluent in German and vaguely conversational in French. I wish to learn more languages as the years go on, but unfortunately, that becomes harder as one ages.</p>
+				<BR>
+				<span id="largeSubheader">Archival Work</span><BR><BR>
+				<p>One of the many positions I've held at my university has been working in the Special Collections and Archives. This work may not seem to overlap with my field of study, but in truth, there is a drought of computer literate archival employees, and as such, much of the digital collections available on the web are being done by volunteers or are maintained in such a way that makes them difficult to access. I work in the Archives, mainly out of my interest, but have conducted a cross-disciplinary research and creative project to help with the digital representation of knowledge.<p>
+				<p>Furthermore, archival storage typically resides on media that is read by computers, because they are the most convenient, and most long-term trustworthy method for storing data in the 21st century. Particularly for older digital formats that are becoming harder to access, this data is sometimes recovered and stored in ways that are less than optimal, because they do not store bit-for-bit representations or because they do not store all data, even that which is hidden. This makes the fields of Computer Science and Computer Engineering applicable to archival science, in that we must design practical, easy-to-use, efficient-to-store ways of retaining older digital data and converted analogue data in a lossless way.</p>
+			</SECTION>
+			<FOOTER>
+				© 2023 Danial Ahari
+			</FOOTER>
+		</SECTION>
 	</BODY>
 </HTML>
