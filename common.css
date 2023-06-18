@@ -65,11 +65,11 @@ body {
 	z-index: 0;
 }
 
-#largeSubheader {
+.largeSubheader {
 	font-size: 1.25em;
 	font-weight: bold;
 }
-#smallSubheader {
+.smallSubheader {
 	font-size: 1em;
 	font-weight: bold;
 }
