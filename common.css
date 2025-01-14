@@ -1,81 +1,213 @@
-header {
+html {
+	height: 100vh;
+}
+
+.body {
+	margin: 1%;
+	opacity: 1;
+	background-image:  linear-gradient(135deg, #999 25%, transparent 25%), linear-gradient(225deg, #666 25%, transparent 25%), linear-gradient(45deg, #999 25%, transparent 25%), linear-gradient(315deg, #666 25%, #CCC 25%);
+	background-position: 10px 0, 10px 0, 0 0, 0 0;
+	background-size: 20px 20px;
+	background-repeat: repeat;
+	overflow: scroll;
+}
+
+#nav {
 	text-align: center;
-	height: auto;
-	width: 100vw;
-	transition: inherit;
-}
-
-nav {
-	text-align: center;
-}
-
-.navlink {
-	color: aquamarine;
-	padding: 2px 10px 2px 10px;
-	border: 1px solid black;
-}
-
-#largeHeader {
-	font-size: 1.75em;
-	font-weight: bold;
-	transition: inherit;
-}
-
-#smallHeader {
-	font-size: 1.25em;
-	transition: inherit;
-}
-
-#top {
-	border-bottom: 2px dashed black;
-	padding-bottom: 10px;
-	left: 0;
+	background-color: #CC9;
+	width: 15vw;
+	left: 5vw;
+	top: 5vh;
 	position: fixed;
-	top: 0;
-	height: auto;
-	transition: 0.2s;
-	z-index: 1;
-	background-color: royalblue;
+	height: fit-content;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: solid black 1px;
 }
 
-#break {
-	display: block;
-	margin-bottom: 5px;
+#navpane {
+	text-align: center;
+	height: fit-content;
 }
 
-body {
-	background-color: aquamarine;
-	font-family: sans-serif;
+.button {
+	background-color: #6FF;
+	border-radius: 20px;
+	border: solid 1px black;
+	width: 80%;
+	display: inline-block;
+	padding: 2%;
 }
-#body {
-	position: absolute;
-	left: 0;
-	width: 100vw;
-	height: auto;
-	background-color: aquamarine;
+
+.button:hover {
+	background-color: #9FF;
+}
+
+.button:active {
+	background-color: #CFF;
+}
+
+.buttonlink {
+	text-decoration: none;
+	font-weight: 500;
+	color: black;
+	width: 80%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#profile_picture { 
+	background-color: #FFC;
+	text-align: center;
+	width: 40%;
+}
+
+#pic {
+	border-radius: 20px;
+	border: solid 3px #666;
+	margin-bottom: 2.5vh;
+	margin-top: 2.5vh;
+	margin-right: 2.5vw;
+	float: left;
+	width: 80%;
+}
+
+#main_col {
+	margin-right: 2.5vw;
+	text-align: justify;
+	margin-top: 2.5vh;
+}
+
+#wide_col {
+	margin-right: 2.5vw;
+	text-align: left;
+	margin-top: 2.5vh;
+}
+
+#contact_col {
+	margin-right: 2.5vw;
+	margin-top: 2.5vh;
 	text-align: center;
 }
 
-#blogPane {
+#content {
+	padding: 1% 1% 0 1%;
+	background-color: #FFFFCC;
+	left: 25vw;
+	width: 70vw;
+	top: 5vh;
+	position: absolute;
+	margin-bottom: 5vh;
+	border: solid black 1px;
+}
+
+#copyright {
+	background-color: #CC9;
 	display: inline-block;
-	text-align: left;
-	width: 80vw;
-	padding: 10px;
-	padding-top: 15vh;
-	background-color: lightblue;
+	padding-top: 1vh;
+	width: 70vw;
+	margin-bottom: 1vh;
 	height: auto;
-	z-index: 0;
-}
-
-.largeSubheader {
-	font-size: 1.25em;
-	font-weight: bold;
-}
-.smallSubheader {
+	min-height: 3.5vh;
+	text-align: center;
 	font-size: 1em;
-	font-weight: bold;
+	border: solid black 1px;
 }
 
-p {
-	text-indent: 20px;
+.inst_title {
+	font-weight: 700;
+}
+
+.biglist > li {
+	margin-top: 2vh;
+}
+
+#cv_title {
+	display: inline;
+}
+
+.cv_button {
+	background-color: #6FF;
+	border-radius: 20px;
+	border: solid 1px black;
+	width: fit-content;
+	display: inline-block;
+	margin-left: 1%;
+	padding: 1%;
+}
+
+.cv_button:hover {
+	background-color: #9FF;
+}
+
+.cv_button:active {
+	background-color: #CFF;
+}
+
+.cv_buttonlink {
+	text-decoration: none;
+	font-weight: 500;
+	color: black;
+	width: 80%;
+	display: inline;
+	margin-bottom: 10px;
+}
+
+#coursetable {
+	margin-left: 2em;
+}
+
+#langtable {
+	margin-left: 2em;
+}
+
+#certtable {
+	margin-left: 2em;
+}
+
+#notice {
+	font-size: small;
+	font-style: italic;
+	margin-left: 2em;
+}
+
+.contact_button {
+	background-color: #6FF;
+	border-radius: 20px;
+	border: solid 1px black;
+	width: 50%;
+	display: inline-block;
+	margin-left: 1%;
+	padding: 1%;
+}
+
+.contact_button:hover {
+	background-color: #9FF;
+}
+
+.contact_button:active {
+	background-color: #CFF;
+}
+
+.contact_buttonlink {
+	text-decoration: none;
+	font-weight: 500;
+	text-align: center;
+	color: black;
+	width: 100%;
+	display: inline;
+	margin-bottom: 10px;
+}
+
+.publication {
+	border: 1px solid black;
+	padding: 2.5%;
+}
+
+.pubtable {
+	width: 100%;
+}
+
+.publab {
+	width: 50%;
 }

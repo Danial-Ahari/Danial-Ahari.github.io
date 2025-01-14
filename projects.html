@@ -1,61 +1,67 @@
-<HTML>
-	<HEAD>
-	<TITLE>
-		Danial Ahari's Personal Website - Curriculum Vitæ
-	</TITLE>
-	<LINK rel="stylesheet" href="common.css">
-	</HEAD>
-	<BODY>
-		<SCRIPT>
-			window.onscroll = function() {
-				shrinkHeader()
-			};
-
-			function shrinkHeader() {
-				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-					document.getElementById("smallHeader").style.fontSize = "0em";
-					document.getElementById("largeHeader").style.fontSize = "1.5em";
-				} else {
-					document.getElementById("smallHeader").style.fontSize = "1.25em";
-					document.getElementById("largeHeader").style.fontSize = "1.75em";
-				}
-			}
-		</SCRIPT> 
-		<SECTION id="top">
-			<HEADER>
-			<span id="largeHeader">Danial Ahari</span><BR>
-			<span id="smallHeader">Professional, Personal, Programming, and Research Homepage</span>
-			</HEADER>
-			<NAV>
-				<span id="break"></span>
-				<A class="navlink" href="index.html">Home</A>
-				<A class="navlink" href="cv.html">Virtual CV</A>
-				<A class="navlink" href="projects.html">Current and Past Projects</A>
-				<A class="navlink" href="research.html">Research Interests</A>
-			</NAV>
-		</SECTION>
-		<SECTION id="body">
-			<SECTION id="blogPane">
-				<span class="largeSubheader">Projects</span><BR><BR>
-				<ul>
-					<li>"Comparison of Assembly-Based Structural Variant Callers"<ul>
-						<li>Performed analysis of genome assembly-based methods for calling variants on the human gneome.</li>
-						<li>Poster in progress.</li>
-					</ul></li>
-					<li>"Host-Based CD-ROM Data Recovery"<ul>
-						<li>Worked on new ways to effectively recover data from CD-ROM, an aging format.</li>
-						<li>Poster available on: <a href="https://louis.uah.edu/rceu-hcr/413/">LOUIS</a></li>
-						<li>First place award at the UAH CS Expo (2023)</li>
-					</ul></li>
-					<li>Campus History WebApp - Timeline<ul>
-						<li>Produced a webapp to show the University of Alabama in Huntsville campus history in a vertical timeline format.</li>
-						<li>Poster available on: <a href="https://louis.uah.edu/rceu-hcr/379/">LOUIS</a></li>
-					</ul></li>
-				</ul>
-			</SECTION>
-			<FOOTER>
-				© 2024 Danial Ahari
-			</FOOTER>
-		</SECTION>
-	</BODY>
-</HTML>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8" />
+	    <title>
+           Danial Ahari's Personal Website - Home
+	    </title>
+	    <link rel="stylesheet" href="common.css">
+	</head>
+	<body class="body">
+        <div id="nav" title="nav" src="nav.html">
+            <div id="navpane">
+                <h1>Danial Ahari</h1><h3>Personal Website</h3><br>
+                <a href="index.html" class="buttonlink"><span class="button">Home</span></a><br>
+                <a href="cv.html" class="buttonlink"><span class="button">Virtual CV</span></a><br>
+                <a href="projects.html" class="buttonlink"><span class="button">Projects</span></a><br>
+                <a href="contact.html" class="buttonlink"><span class="button">Contact</span></a><br>
+            </div>
+        </div>
+		<div id="content">
+			<div id="wide_col">
+				<h1>Projects and Publications</h1>
+				<div class="publication">
+					<h3>Comparison of Assembly-Based Structural Variant Callers</h3>
+					<table class="pubtable">
+					<tr><td class="publab">Other Authors: </td><td>Zach Bonnstetter, Lori Handley, James Lawlor, Greg Cooper</td></tr>
+					<tr><td class="publab">Presentation Date (if applicable): </td><td>2024-07-06</td></tr>
+					<tr><td class="publab">Publication Date (if applicable): </td><td>N/A</td></tr>
+					<tr><td class="publab">Publication Available: </td><td>Coming Soon</td></tr>
+					<tr><td class="publab">Code Available: </td><td>N/A</td></tr>
+					<tr><td class="publab">Deliverables Available: </td><td>N/A</td></tr>
+					</table>
+				</div>
+				<br>
+				<div class="publication">
+					<h3>Host-Based CD-ROM Data Recovery</h3>
+					<table class="pubtable">
+					<tr><td class="publab">Other Authors: </td><td>Jacob Hauenstein</td></tr>
+					<tr><td class="publab">Presentation Date (if applicable): </td><td>2023-09-13</td></tr>
+					<tr><td class="publab">Publication Date (if applicable): </td><td>2023-09-01</td></tr>
+					<tr><td class="publab">Publication Available: </td><td><a href="https://louis.uah.edu/rceu-hcr/413">LOUIS</a></td></tr>
+					<tr><td class="publab">Code Available: </td><td>
+						<a href="https://github.com/Danial-Ahari/CD-Read-and-Error-Correction">Main Project (GitHub)</a><br>
+						<a href="https://github.com/Danial-Ahari/CD-Visualizer">Visualization Tool (GitHub)</a><br>
+						<a href="https://github.com/Danial-Ahari/Standalone-BIN-Image-Corrector">Image Correction Tool (GitHub)</a><br>
+						</td></tr>
+					<tr><td class="publab">Deliverables Available: </td><td>See repositories above.</td></tr>
+					</table>
+				</div>
+				<br>
+				<div class="publication">
+					<h3>Campus History WebApp - Timeline</h3>
+					<table class="pubtable">
+					<tr><td class="publab">Other Authors: </td><td>Drew Adan, Christine Sears</td></tr>
+					<tr><td class="publab">Presentation Date (if applicable): </td><td>2022-09-14</td></tr>
+					<tr><td class="publab">Publication Date (if applicable): </td><td>2022-09-01</td></tr>
+					<tr><td class="publab">Publication Available: </td><td><a href="https://louis.uah.edu/rceu-hcr/379">LOUIS</a></td></tr>
+					<tr><td class="publab">Code Available: </td><td>N/A</td></tr>
+					<tr><td class="publab">Deliverables Available: </td><td><a href="http://libarchstor2.uah.edu/UAHTimeline/">University History Timeline</a></td></tr>
+					</table>
+				</div>
+				<br>
+			</div>
+		<div id="copyright">© 2025 Danial Ahari&emsp;This entire website is less than 1 MiB!&emsp;The repository can be accessed on <a href="https://github.com/Danial-Ahari/Danial-Ahari.github.io">GitHub</a>.</div>
+        </div>
+    </body>
+</html>
